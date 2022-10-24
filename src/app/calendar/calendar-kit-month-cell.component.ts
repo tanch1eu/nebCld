@@ -18,7 +18,6 @@ import {
       (dateChange)="select.emit($event)"
     >
     </nb-calendar-day-picker>
-    <!-- <nb-calendar [(date)]="date"> </nb-calendar> -->
   `,
   styles: [
     `
@@ -36,7 +35,7 @@ export class CalendarKitMonthCellComponent
 {
   select: EventEmitter<Date> = new EventEmitter();
   selectedValue?: Date;
-  // override date = new Date();
+
   constructor(
     private dateService: NbDateService<Date>,
     monthModel: NbCalendarMonthModelService<Date>
