@@ -11,6 +11,8 @@ import { NbCalendarModule } from '@nebular/theme';
 import { NbCalendarKitModule } from '@nebular/theme';
 import { CalendarKitMonthCellComponent } from './calendar/calendar-kit-month-cell.component';
 
+import { NbButtonModule } from '@nebular/theme';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,7 @@ import { CalendarKitMonthCellComponent } from './calendar/calendar-kit-month-cel
     NbCalendarModule,
     NbCardModule,
     NbCalendarKitModule,
+    NbButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
