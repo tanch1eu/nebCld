@@ -8,8 +8,14 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { CalendarComponent } from './calendar/calendar.component';
 import { NbCalendarModule } from '@nebular/theme';
+import { NbCalendarKitModule } from '@nebular/theme';
+import { CalendarKitMonthCellComponent } from './calendar/calendar-kit-month-cell.component';
 @NgModule({
-  declarations: [AppComponent, CalendarComponent],
+  declarations: [
+    AppComponent,
+    CalendarComponent,
+    CalendarKitMonthCellComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -19,6 +25,7 @@ import { NbCalendarModule } from '@nebular/theme';
     AppRoutingModule,
     NbCalendarModule,
     NbCardModule,
+    NbCalendarKitModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
