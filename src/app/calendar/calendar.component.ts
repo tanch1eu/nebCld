@@ -15,4 +15,6 @@ export class CalendarComponent implements OnInit {
   date = new Date();
   month = new Date();
   monthCellComponent = CalendarKitMonthCellComponent;
+
+  onClick(): void {}
 }
